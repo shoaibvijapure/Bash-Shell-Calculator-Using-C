@@ -1,6 +1,3 @@
-[![Downloads](https://img.shields.io/pypi/dm/TwitterCounter.svg)](https://crate.io/packages/TwitterCounter)
-[![Downloads](https://img.shields.io/pypi/v/TwitterCounter.svg)](https://crate.io/packages/TwitterCounter)
-
 TwitterCounter
 ==============
 Scripts for counting tweets.  Uses 'search/tweets' or 'statuses/filter' Twitter resource to get old or new tweets, respectively.
