@@ -1,10 +1,54 @@
-These will be my forays into learning Python for data science. 
+[![Downloads](https://img.shields.io/pypi/dm/TwitterCounter.svg)](https://crate.io/packages/TwitterCounter)
+[![Downloads](https://img.shields.io/pypi/v/TwitterCounter.svg)](https://crate.io/packages/TwitterCounter)
 
-## Twitter Words Extractor
+TwitterCounter
+==============
+Scripts for counting tweets.  Uses 'search/tweets' or 'statuses/filter' Twitter resource to get old or new tweets, respectively.
 
-This code connects to the Twitter API and searches for tweets based on a
-keyword provided by the user. It then gets the text of the tweets and counts
-all the words (filtering the most common words like "of" or "the") and prints
-a word count for the N most common words in tweets that match the search.
-There is also an example of using the Twitter API to look up a users stream
-and then search through their tweets to get their most commonly used words.
+CountTweets.py
+--------------
+Counts the number of tweets that contain any word passed on the command line.
+
+Example:
+
+	> python -u -m TwitterCounter.CountTweets red blue
+
+CountWords.py
+-------------
+Prints a tally count of the occurrence of any word passed on the command line.
+
+Example:
+
+	> python -u -m TwitterCounter.CountWords red blue
+
+RankHashtags.py
+---------------
+Prints a tally count of the hashtags that appear most frequently in tweets that contain any word passed on the command line.
+
+Example:
+
+	> python -u -m TwitterCounter.RankHashtags red blue
+
+RankReTweets.py
+---------------
+Prints a tally count of the most re-tweeted tweets that contain any word passed on the command line, and prints the re-tweet text.
+
+Example:
+
+	> python -u -m TwitterCounter.RankRetweets red blue
+
+RankWords.py
+------------
+Prints a tally count of the words that appear most frequently in tweets that contain any word passed on the command line.
+
+Example:
+
+	> python -u -m TwitterCounter.RankWords red blue
+	
+Authentication
+--------------
+See TwitterAPI documentation.
+
+Dependencies
+-----------
+* TwitterAPI
